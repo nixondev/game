@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Phaser 3 Top‑Down RPG POC</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #1e1e1e;
+      color: #ddd;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+    }
+    #game-container {
+      width: 100vw;
+      height: 100vh;
+    }
+    .fallback {
+      position: absolute;
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="game-container">
+    <noscript>
+      <div class="fallback">This demo requires JavaScript to run.</div>
+    </noscript>
+  </div>
+
+  <!-- Phaser 3 from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>
+
+  <!-- Utils -->
+  <script src="js/utils/Constants.js"></script>
+
+  <!-- Data (content databases) -->
+  <script src="js/data/dialogues.js"></script>
+  <script src="js/data/items.js"></script>
+  <script src="js/data/quests.js"></script>
+
+  <!-- Core services (Phaser 3 friendly) -->
+  <script src="js/services/DialogueService.js"></script>
+  <script src="js/services/InventoryService.js"></script>
+  <script src="js/services/QuestManager.js"></script>
+
+  <!-- Scenes -->
+  <script src="js/states/Boot.js"></script>
+  <script src="js/states/Preload.js"></script>
+  <script src="js/states/MainMenu.js"></script>
+  <script src="js/states/GameWorld.js"></script>
+  <script src="js/states/HUD.js"></script>
+  <script src="js/states/GameOver.js"></script>
+
+  <!-- Main entry -->
+  <script src="js/main.js"></script>
+</body>
+</html>
