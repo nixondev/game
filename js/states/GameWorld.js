@@ -18,6 +18,8 @@
       const ground = map.createLayer('Ground', tiles, 0, 0);
       const walls = map.createLayer('Collision', tiles, 0, 0);
       this.map = map; this.groundLayer = ground; this.collisionLayer = walls;
+      // Map enter toast
+      this.game && this.game.events && this.game.events.emit('hud:toast', { text: 'Entered ' + (this.mapKey || 'level1') });
 
       // Collisions by property or index
       if (walls && walls.setCollisionByProperty){ walls.setCollisionByProperty({ collide: true }); }
@@ -239,10 +241,10 @@
         const portal = this.add.rectangle(x, y, w, h, 0x00ffff, 0.15);
         portal.setOrigin(0, 1); // Tiled y is bottom-left of object
         const centerX = x + w/2; const centerY = y - h/2;
-        // Create an Arcade body using an invisible physics image
-        const hit = this.physics.add.image(centerX, centerY, null).setVisible(false).setActive(true);
-        hit.body.setAllowGravity(false); hit.body.setImmovable(true);
-        hit.setSize(w, h);
+        // Create an Arcade body using a zone (no texture)
+        const hit = this.add.zone(centerX, centerY, w, h).setOrigin(0.5);
+        this.physics.add.existing(hit, true); // static body
+        hit.body.setAllowGravity && hit.body.setAllowGravity(false);
         hit.custom = { targetMap, targetSpawn, prompt };
         this.portals.add(hit);
       });
@@ -287,12 +289,24 @@
     }
 
     update(time, delta){
-      // Portal proximity hint
-      if (this.activePortal && !this.portalPromptShown){
-        const p = this.activePortal;
-        const prompt = p.custom && p.custom.prompt || 'Press E to travel';
-        this.game.events.emit('hud:toast', { text: prompt });
-        this.portalPromptShown = true;
+      // Portal proximity hint and leave detection
+      if (this.activePortal){
+        // If we are no longer overlapping, clear the active portal
+        let stillOverlapping = false;
+        if (this.portals){
+          this.physics.overlap(this.player, this.portals, (player, portal) => {
+            if (portal === this.activePortal) stillOverlapping = true;
+          });
+        }
+        if (!stillOverlapping){
+          this.activePortal = null;
+          this.portalPromptShown = false;
+        } else if (!this.portalPromptShown){
+          const p = this.activePortal;
+          const prompt = p.custom && p.custom.prompt || 'Press E to travel';
+          this.game.events.emit('hud:toast', { text: prompt });
+          this.portalPromptShown = true;
+        }
       }
       const accel = C.PLAYER.ACCEL || 600;
       let ax = 0, ay = 0;

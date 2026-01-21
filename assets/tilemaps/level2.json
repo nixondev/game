@@ -1,0 +1,119 @@
+{
+  "height": 18,
+  "infinite": false,
+  "layers": [
+    {
+      "data": [
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+        2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+      ],
+      "height": 18,
+      "id": 1,
+      "name": "Ground",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 25,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "data": [
+        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+        1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+        1,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,0,1,0,0,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,1,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,1,1,0,1,0,1,0,0,0,1,0,1,0,1,0,0,1,
+        1,0,0,1,0,1,0,0,0,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,1,
+        1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+        1,0,0,0,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,0,0,1,
+        1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+        1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+      ],
+      "height": 18,
+      "id": 2,
+      "name": "Collision",
+      "opacity": 1,
+      "type": "tilelayer",
+      "visible": true,
+      "width": 25,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "draworder": "topdown",
+      "id": 3,
+      "name": "Objects",
+      "objects": [
+        { "gid": 0, "height": 0, "id": 1, "name": "player", "rotation": 0, "type": "spawn", "visible": true, "width": 0, "x": 120, "y": 120 },
+        { "gid": 0, "height": 0, "id": 2, "name": "spawn_from_level1", "rotation": 0, "type": "spawn", "visible": true, "width": 0, "x": 160, "y": 160 },
+        { "gid": 0, "height": 0, "id": 3, "name": "spawn_from_level3", "rotation": 0, "type": "spawn", "visible": true, "width": 0, "x": 1440, "y": 960 },
+        { "gid": 0, "height": 0, "id": 4, "name": "npcMeadow", "rotation": 0, "type": "npc", "visible": true, "width": 0, "x": 500, "y": 400, "properties": [ { "name": "behavior", "type": "string", "value": "wander" }, { "name": "wanderRadius", "type": "int", "value": 200 }, { "name": "dialogue", "type": "string", "value": "Welcome to the meadows!" } ] },
+        { "gid": 0, "height": 64, "id": 5, "name": "to_level1", "rotation": 0, "type": "portal", "visible": true, "width": 128, "x": 64, "y": 160, "properties": [ { "name": "targetMap", "type": "string", "value": "level1" }, { "name": "targetSpawn", "type": "string", "value": "spawn_from_level2" }, { "name": "prompt", "type": "string", "value": "Press E to return to Level 1 (Fields)" } ] },
+        { "gid": 0, "height": 64, "id": 6, "name": "to_level3", "rotation": 0, "type": "portal", "visible": true, "width": 128, "x": 1472, "y": 1088, "properties": [ { "name": "targetMap", "type": "string", "value": "level3" }, { "name": "targetSpawn", "type": "string", "value": "spawn_from_level2" }, { "name": "prompt", "type": "string", "value": "Press E to enter Level 3 (Cave)" } ] }
+      ],
+      "opacity": 1,
+      "type": "objectgroup",
+      "visible": true,
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "nextlayerid": 4,
+  "nextobjectid": 1,
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "tiledversion": "1.10.2",
+  "tileheight": 64,
+  "tilesets": [
+    {
+      "columns": 2,
+      "firstgid": 1,
+      "image": "terrain.png",
+      "imageheight": 64,
+      "imagewidth": 128,
+      "margin": 0,
+      "name": "terrain",
+      "spacing": 0,
+      "tilecount": 2,
+      "tileheight": 64,
+      "tilewidth": 64,
+      "tiles": [
+        {
+          "id": 0,
+          "properties": [
+            { "name": "collide", "type": "bool", "value": true }
+          ]
+        }
+      ]
+    }
+  ],
+  "tilewidth": 64,
+  "type": "map",
+  "version": "1.10",
+  "width": 25
+}
